@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.12">
+  <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
+    <mxGraphModel dx="3230" dy="1048" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6e0c8c40b5770093-33" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=123;tabHeight=24;tabPosition=left;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;fontFamily=Verdana;fontSize=10;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-928" y="380" width="418" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="F_lrqiQLRbvNHL63mxr3-1" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=123;tabHeight=24;tabPosition=left;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;fontFamily=Verdana;fontSize=10;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-1600" y="680" width="470" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="F_lrqiQLRbvNHL63mxr3-2" value="" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=123;tabHeight=24;tabPosition=left;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeColor=#000000;strokeWidth=1;fillColor=#ffffff;fontFamily=Verdana;fontSize=10;fontColor=#000000;align=center;" parent="1" vertex="1">
+          <mxGeometry x="-1600" y="162.75" width="460" height="257.25" as="geometry" />
+        </mxCell>
+        <mxCell id="F_lrqiQLRbvNHL63mxr3-7" value="GUI" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1430" y="270" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="F_lrqiQLRbvNHL63mxr3-28" value="BusinessLogic" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1445" y="800" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="F_lrqiQLRbvNHL63mxr3-37" value="Model" style="text;align=center;fontStyle=1;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-790" y="487" width="80" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5RUinRGsZApEl0ErtdZD-1" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0;exitDx=460;exitDy=140.625;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=132;entryPerimeter=0;" edge="1" parent="1" source="F_lrqiQLRbvNHL63mxr3-2" target="6e0c8c40b5770093-33">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1050" y="640" as="sourcePoint" />
+            <mxPoint x="-890" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5RUinRGsZApEl0ErtdZD-2" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0;exitY=0;exitDx=480;exitDy=98;exitPerimeter=0;entryX=0;entryY=0;entryDx=0;entryDy=186;entryPerimeter=0;" edge="1" parent="1" source="F_lrqiQLRbvNHL63mxr3-1" target="6e0c8c40b5770093-33">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1180" y="305" as="sourcePoint" />
+            <mxPoint x="-950" y="562" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5RUinRGsZApEl0ErtdZD-3" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.618;exitY=0.991;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.591;entryY=0.102;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="F_lrqiQLRbvNHL63mxr3-2" target="F_lrqiQLRbvNHL63mxr3-1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1500" y="440" as="sourcePoint" />
+            <mxPoint x="-1035" y="608.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
