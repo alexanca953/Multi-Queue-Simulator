@@ -33,6 +33,7 @@ tasks=new ArrayList<Task>();
 tasks=generateRandomTasks();
 
     }
+
     public ArrayList<Task> generateRandomTasks() {
        ArrayList<Task> tasks=new ArrayList<>();
        int arr;
@@ -81,7 +82,6 @@ tasks=generateRandomTasks();
                     verif=0;
                 }
             }
-
             ///punem in fisier
         String fisier="fisier";
         if(numberOfServers ==2&&numberOfClients==4)
@@ -135,8 +135,6 @@ tasks=generateRandomTasks();
                     break;
                 }
             }
-
-
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -144,13 +142,9 @@ tasks=generateRandomTasks();
             }
 //           if(verif==1&& tasks.isEmpty())
 //               break;
-
-
-
             // Condiția finală de oprire
             if (tasks.isEmpty() && queuesEmpty) {
                 System.out.println("SIMULATION ENDED: No waiting clients and all queues empty at time " + currentTime);
-
                 break;
             }
             currentTime++;
@@ -164,24 +158,25 @@ tasks=generateRandomTasks();
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    // Preluăm toate valorile din frame
-                    simulationManager.numberOfClients = simulationManager.frame.getNumberOfClients();
-                    simulationManager.numberOfServers = simulationManager.frame.getNumberOfQueues();
-                    simulationManager.timeLimit = simulationManager.frame.getSimulationTime();
-                    simulationManager.minArrivalTime = simulationManager.frame.getArrivalMin();
-                    simulationManager.maxArrivalTime = simulationManager.frame.getArrivalMax();
-                    simulationManager.minProcessingTime = simulationManager.frame.getServiceMin();
-                    simulationManager.maxProcessingTime = simulationManager.frame.getServiceMax();
+                    synchronized(this) {
+                        // Preluăm toate valorile din frame
+                        simulationManager.numberOfClients = simulationManager.frame.getNumberOfClients();
+                        simulationManager.numberOfServers = simulationManager.frame.getNumberOfQueues();
+                        simulationManager.timeLimit = simulationManager.frame.getSimulationTime();
+                        simulationManager.minArrivalTime = simulationManager.frame.getArrivalMin();
+                        simulationManager.maxArrivalTime = simulationManager.frame.getArrivalMax();
+                        simulationManager.minProcessingTime = simulationManager.frame.getServiceMin();
+                        simulationManager.maxProcessingTime = simulationManager.frame.getServiceMax();
 
-                    simulationManager.selectionPolicy = simulationManager.frame.getSelectedStrategy().equals("TIME") ? SelectionPolicy.SHORTEST_TIME : SelectionPolicy.SHORTEST_QUEUE;
+                        simulationManager.selectionPolicy = simulationManager.frame.getSelectedStrategy().equals("TIME") ? SelectionPolicy.SHORTEST_TIME : SelectionPolicy.SHORTEST_QUEUE;
 
-                    simulationManager.scheduler = new Scheduler(simulationManager.numberOfServers, simulationManager.numberOfClients);
-                    simulationManager.scheduler.changeStrategy(simulationManager.selectionPolicy);
-                    simulationManager.tasks = simulationManager.generateRandomTasks();
+                        simulationManager.scheduler = new Scheduler(simulationManager.numberOfServers, simulationManager.numberOfClients);
+                        simulationManager.scheduler.changeStrategy(simulationManager.selectionPolicy);
+                        simulationManager.tasks = simulationManager.generateRandomTasks();
 
-                    Thread thread = new Thread(simulationManager);
-                    thread.start();
-
+                        Thread thread = new Thread(simulationManager);
+                        thread.start();
+                    }
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(simulationManager.frame.getFrame(),
                             "Please enter valid numbers in all fields",

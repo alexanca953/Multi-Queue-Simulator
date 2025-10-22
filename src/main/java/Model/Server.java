@@ -21,25 +21,36 @@ public class Server implements Runnable {
     public void run() {
         while (true) {
             try {
-                synchronized(this) {
-                Task task = tasks.peek();
-                if (task != null)
-                { Thread.sleep(1000);
-                    task.setServiceTime(task.getServiceTime() - 1);
-                    waitingPeriod.decrementAndGet();
-                    if (task.getServiceTime() <= 0)
-                    {
-                        tasks.poll();
-                    }
 
-                }}
+                    Task task = tasks.peek();
+                    if (task != null) {
+                        try {
+                            Thread.sleep(1000);
+                            waitingPeriod.decrementAndGet();
+                            task.setServiceTime(task.getServiceTime() - 1);
+
+                        } catch (InterruptedException e) {
+                            task.setServiceTime(task.getServiceTime() + 1);
+                            Thread.currentThread().interrupt();
+                            return;
+                        }
+
+
+                        if (task.getServiceTime() <= 0) {
+                            tasks.poll();
+
+                        }
+
+                    }
 //                else {
 //                    Thread.sleep(1000); //
 //                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+
+            } catch (Exception e2) {
+                e2.printStackTrace();
             }
         }
+
     }
     public Task[] getTasks()
     {

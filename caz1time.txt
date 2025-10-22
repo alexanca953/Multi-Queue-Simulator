@@ -1,0 +1,174 @@
+Waiting clients:(1,2,3) (3,6,4) (2,20,3) (4,25,3) 
+Queues at time 0: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(1,2,3) (3,6,4) (2,20,3) (4,25,3) 
+Queues at time 1: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(3,6,4) (2,20,3) (4,25,3) 
+Queues at time 2: 
+Queue1:[(1,2,3)]
+Queue2:[]
+
+
+Waiting clients:(3,6,4) (2,20,3) (4,25,3) 
+Queues at time 3: 
+Queue1:[(1,2,2)]
+Queue2:[]
+
+
+Waiting clients:(3,6,4) (2,20,3) (4,25,3) 
+Queues at time 4: 
+Queue1:[(1,2,1)]
+Queue2:[]
+
+
+Waiting clients:(3,6,4) (2,20,3) (4,25,3) 
+Queues at time 5: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 6: 
+Queue1:[(3,6,4)]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 7: 
+Queue1:[(3,6,3)]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 8: 
+Queue1:[(3,6,2)]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 9: 
+Queue1:[(3,6,1)]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 10: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 11: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 12: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 13: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 14: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 15: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 16: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 17: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 18: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,20,3) (4,25,3) 
+Queues at time 19: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(4,25,3) 
+Queues at time 20: 
+Queue1:[(2,20,3)]
+Queue2:[]
+
+
+Waiting clients:(4,25,3) 
+Queues at time 21: 
+Queue1:[(2,20,2)]
+Queue2:[]
+
+
+Waiting clients:(4,25,3) 
+Queues at time 22: 
+Queue1:[(2,20,1)]
+Queue2:[]
+
+
+Waiting clients:(4,25,3) 
+Queues at time 23: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(4,25,3) 
+Queues at time 24: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:
+Queues at time 25: 
+Queue1:[(4,25,3)]
+Queue2:[]
+
+
+Waiting clients:
+Queues at time 26: 
+Queue1:[(4,25,2)]
+Queue2:[]
+
+
+Waiting clients:
+Queues at time 27: 
+Queue1:[(4,25,1)]
+Queue2:[]
+
+
+Waiting clients:
+Queues at time 28: 
+Queue1:[]
+Queue2:[]
+
+

@@ -1,0 +1,30 @@
+Waiting clients:(2,2,2) (4,3,3) (1,4,2) (3,4,3) 
+Queues at time 0: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(2,2,2) (4,3,3) (1,4,2) (3,4,3) 
+Queues at time 1: 
+Queue1:[]
+Queue2:[]
+
+
+Waiting clients:(4,3,3) (1,4,2) (3,4,3) 
+Queues at time 2: 
+Queue1:[(2,2,2)]
+Queue2:[]
+
+
+Waiting clients:(1,4,2) (3,4,3) 
+Queues at time 3: 
+Queue1:[(2,2,1)]
+Queue2:[(4,3,3)]
+
+
+Waiting clients:
+Queues at time 4: 
+Queue1:[(1,4,2), (3,4,3)]
+Queue2:[(4,3,2)]
+
+
